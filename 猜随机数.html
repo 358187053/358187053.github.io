@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getRandomIntInclusive(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+            //含最大值，含最小值 
+        }
+        var fan = getRandomIntInclusive(1, 10);
+        for (var i = 0; i < 4; i++) {
+
+            var num = prompt('输入一个1-10的数猜一猜大小')
+            if (num > fan) {
+                alert('我很大你忍一下？')
+            } else if (num < fan) {
+                alert('害男人不能说小！')
+            } else {
+                alert('牛逼老铁666给你蒙对了')
+                break;
+            }
+            if (i == 3) {
+                alert('很抱歉您的机会已用完，wdnmd你是采购吧')
+            } else {
+                alert('您还有' + (3 - i) + '次机会，别给机会不中用啊')
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
