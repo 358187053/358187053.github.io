@@ -14,19 +14,19 @@
         var fan = getRandomIntInclusive(1, 10);
         for (var i = 0; i < 4; i++) {
 
-            var num = prompt('输入一个1-10的数猜一猜大小')
+            var num = prompt('请输入一个1-10的数猜一猜大小')
             if (num > fan) {
-                alert('我很大你忍一下？')
+                alert('猜大了哦！')
             } else if (num < fan) {
-                alert('害男人不能说小！')
+                alert('猜小了呢！')
             } else {
-                alert('牛逼老铁666给你蒙对了')
+                alert('恭喜你猜对了！')
                 break;
             }
             if (i == 3) {
-                alert('很抱歉您的机会已用完，wdnmd你是采购吧')
+                alert('很抱歉您的机会已用完~')
             } else {
-                alert('您还有' + (3 - i) + '次机会，别给机会不中用啊')
+                alert('您还有' + (3 - i) + '次机会')
             }
         }
     </script>
